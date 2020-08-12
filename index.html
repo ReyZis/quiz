@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ar">
+
+<head>
+
+    <title>MyBrainQuiz</title>
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/ec12bb7bd0.js" crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- optional CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row d-none d-md-block">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img class="rounded" src="asset/logo.png" height="32" alt="logo">
+                            <h4 class="text-white d-inline my-auto">MyBrainQuiz</h4>
+                        </a>
+                    </div>
+                    <!-- end of inner container -->
+
+                </nav>
+                <!-- end of nav bar -->
+
+            </div>
+            <!-- end of inner container-fluid -->
+
+        </div>
+        <!-- end of row -->
+        <div id="one" class="container">
+            <div class="row vh-100">
+
+                <div class="col">
+
+                    <div class="row d-flex flex-column align-items-center my-5">
+                        <h1 class="text-center">مرحبا بك في الإختبار السريع لنسبة الذكاء!</h1>
+                        <p class="text-center">.رغم أن هذا الإختبار لا يأخذ منك الكثير من الوثت لكنه لا يزال يقدم تقديرا جيدا لنسبة ذكائك الحقيقي</p>
+                    </div>
+
+                    <div class="row justify-content-center my-5">
+                        <button onclick="changeToTwo(); nextQuestion(this)" value="0" class="start-btn">إبدأ الأن</button>
+                    </div>
+
+                    <div class="ad-container">
+                        <div class="ads rounded bg-dark text-white text-center mx-auto">advertisment</div>
+                    </div>
+
+                </div>
+                <!-- end of the main column -->
+
+            </div>
+            <!-- end of main row -->
+
+        </div>
+        <!-- end of container-fluid -->
+    </div>
+
+
+    <div id="two" hidden class="container">
+        <div id="game_container" class="row h-75">
+            <div class="col d-flex justify-content-center">
+                <div id="quizzes_container" class="d-flex flex-column justify-content-center w-100">
+
+
+                </div>
+                <!-- end of the main column -->
+            </div>
+
+        </div>
+        <!-- end of main row -->
+
+        <div class="ad-container">
+            <div class="ads rounded bg-dark text-white text-center mx-auto">advertisment</div>
+        </div>
+
+
+    </div>
+    <!-- end of container-fluid -->
+
+
+
+    <div id="three" hidden class="container">
+        <div class="row vh-100">
+
+            <div class="col">
+
+                <div class="row d-flex flex-column align-items-center my-3">
+                    <h1 id="congratulation_word"></h1>
+                    <p id="congratulation_sentence"></p>
+                    <p>نسبة ذكائك هي:</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="d-flex justify-content-center position-relative">
+                        <img src="asset/brain.png" alt="brain" width="300px" height="230px">
+                        <div class="percentage-container position-absolute"></div>
+                        <h1 id="score" class="position-absolute"></h1>
+                    </div>
+                </div>
+
+                <div class="row d-flex flex-column align-items-center my-5">
+                    <p>أخرج وشارك أصدقائك ودع العالم يعرف كم أنت ذكي!</p>
+                    <a class="shareBtn rounded mt-3 px-5 py-2" href="https://www.facebook.com/sharer/sharer.php?u=http://mybrainquiz.com/" target="_blank">
+                        <i class="fab fa-facebook-square"></i> شارك على فيسبوك
+                    </a>
+                </div>
+
+
+                <div class="ad-container">
+                    <div class="ads rounded bg-dark text-white text-center mx-auto">advertisment</div>
+                </div>
+
+            </div>
+            <!-- end of the main column -->
+
+        </div>
+        <!-- end of main row -->
+
+    </div>
+    <!-- end of container-fluid -->
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="scripting/script.js"></script>
+    <script src="scripting/levels-results.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

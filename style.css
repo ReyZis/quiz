@@ -1,0 +1,81 @@
+* {
+  padding: 0px;
+  margin: 0;
+}
+.container,
+.container-fluid,
+.navbar-brand,
+.row {
+  padding: 0px;
+}
+.container-fluid,
+.navbar-brand {
+  margin: 0px;
+}
+.navbar {
+  background-color: #feb13d;
+  padding: 5px 0px;
+}
+.row {
+  margin: 0px;
+  color: #1f487c;
+}
+.row h1 {
+  font-size: 5vh;
+}
+.row p {
+  font-size: 2vh;
+}
+button {
+  border: none;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #fea338 0%, #eb7a1a 100%);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+button:hover {
+  background-image: linear-gradient(to bottom, #fe971f 0%, #d96e13 100%);
+  border: none;
+}
+button:active {
+  background-image: linear-gradient(to bottom, #fe971f 0%, #d96e13 100%);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  outline: 0;
+}
+button:focus {
+  outline: 0;
+}
+.start-btn {
+  padding: 15px 90px;
+}
+.percentage-container {
+  background-image: url('asset/percentage.png');
+  height: 0%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-position: 0 100%;
+  background-size: 300px 230px;
+  transition: height 2s;
+}
+#score {
+  color: #feb13d;
+  font-weight: bold;
+  font-size: 4em;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  text-align: center;
+  text-shadow: -2px -2px 1px white, 0 -2px 1px white, 2px -2px 1px white, -2px 0 1px white, 2px 0 1px white, -2px 2px 1px white, 0 2px 1px white, 2px 2px 1px white;
+}
+.shareBtn,
+.shareBtn:hover {
+  background-color: #3b5998;
+  color: white;
+}
+.ads {
+  height: 200px;
+  width: 300px;
+}
